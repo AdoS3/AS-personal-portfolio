@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+}
+
+.headers {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 400;
+    text-align: center;
+    padding: 30px;
+}
+
+body {
+    background-image: url(../../images/photogalleryBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1080px;
+    overflow-x: scroll;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+img {
+    width: 320px;
+    height: 400px;
+    margin: 20px;
+    filter: grayscale(50%);
+    border-radius: 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform .8s ease, filter .8s ease;
+    filter: grayscale(0%);
+}
+
+
+#icon-left, #icon-right {
+    padding: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 1.8em;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+}
+
+#icon-left {
+    margin-right: 50px;
+}
+
+#icon-left:hover {
+    color: black;
+    background-color: #fff;
+}
+
+#icon-right {
+    margin-left: 50px;
+}
+
+#icon-right:hover {
+    color: black;
+    background-color: #fff;
+}
+
+@media (max-width:650px){
+    img {
+        width: 200px;
+        height: 250px;
+    }
+    .headers {
+        font-size: 3em;
+    }
+    #icon-left, #icon-right {
+        padding: 20px;
+        font-size: 1em;
+    }
+}

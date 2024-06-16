@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../../images/todobackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.to-do-container {
+    width: 100%;
+    max-width: 40em;
+    min-height: 400px;
+    background-color: #fff;
+    margin: 10em auto;
+    border-radius: 1.2em;
+    border: 5px solid black;
+    box-shadow: 0 0 20px rgb(246, 130, 130), 0 0 10px rgb(71, 73, 226);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: .8em;
+    padding-bottom: .8em;
+    border-bottom: 2px solid black;
+}
+
+.row {
+    margin: 1.2em 3em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(86, 85, 85);
+    border-radius: 1.2em;
+}
+
+input {
+    flex: 1;
+    width: 100%;
+    padding: 1em 1em;
+    border-radius: 1.2em;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 1.2em;
+    border: none;
+    outline: none;
+    padding: 1em 3em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: black;
+}
+
+.to-do-list {
+    margin: 1em 3em 1em 5em;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li::before {
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../../images/unchecked.png);
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(../../images/checked.png) ;
+}
+
+.delete {
+    content: "";
+    background-image: url(../../images/delete.jpg);
+    height: 1.5em;
+    width: 1.5em;
+    background-size: cover;
+}
+
+.puff-in-center {
+	-webkit-animation: puff-in-center 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes puff-in-center {
+    0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}

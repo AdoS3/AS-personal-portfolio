@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact ME</title>
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="../home.html">HOME</a></li>
+            <li><a href="../AboutME/aboutme.html">ABOUT ME</a></li>
+            <li><a href="../Portfolio/portfolio.html">PORTFOLIO</a></li>
+            <li><a class="active" href="contactme.html">CONTACT ME</a></li>
+        </ul>
+    </header>
+    <div class="contact-content text-focus-in">
+        <h1>Contact me</h1>
+        <p class="paragraph">Questions? Or do you want to share your Projects?</p>
+        <form class="contact-me-form" id="contact-form">
+            <div class="contact-box">
+                <input type="text" name="user-name" id="name" placeholder="Your Name" class="contact-input">
+                <label for="name" class="contact-label">First Name</label>
+            </div>
+            <div class="contact-box">
+                <input type="email" name="user-email" id="email" placeholder="Your E-mail" class="contact-input">
+                <label for="email" class="contact-label">Your E-mail</label>
+            </div>
+            <div class="contact-message">
+                <textarea id="message" name="user-message" placeholder="Your message" class="contact-text"></textarea>
+                <label for="message" class="contact-label-message">Your Message</label>
+            </div>
+
+            <button type="submit" class="contact-btn">SEND A MESSAGE</button>
+            <p class="sending-message"></p>
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

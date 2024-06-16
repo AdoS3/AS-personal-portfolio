@@ -1,0 +1,250 @@
+/* THIS IS THE START OF EVERY MY PAGE*/
+* {
+    margin: 0;
+    font-family: comic sans MS;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2em 0 3em 0;
+    border-bottom: 1px solid #fff;
+}
+
+body {
+    background-color: #4f4e4e;
+}
+
+
+
+.navbar {
+    width: 80%;
+    text-align: center;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.navbar a:hover {
+    box-shadow: 0 0 10px rgb(124, 1, 1), 0 0 10px black;
+    background-color: rgb(124, 1, 1);
+}
+
+.active {
+    box-shadow: 0 0 10px rgb(124, 1, 1), 0 0 10px black;
+    background-color: rgb(124, 1, 1);
+}
+
+.navbar li {
+        list-style: none;
+}
+
+/* THIS IS THE END */
+
+.container-about-me {
+    margin: 3em auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.about-me-info {
+    width: 50%;
+}
+
+.about-me-info span {
+    color: #fff;
+    font-size: 1.2em;
+    margin-left: 3em;
+}
+
+.adress, .phone-number, .e-mail, .birthday, .education, .hobby {
+    margin-bottom: 1em;
+}
+
+.about-me-info i {
+    font-size: 1.8em;
+}
+
+.img {
+    width: 30em;
+    height: 30em;
+    box-shadow: 0 0 50px black, 0 0 20px red;
+    border-radius: 50%;
+}
+
+.hobby {
+    color: #fff;
+}
+
+.hobby h1 {
+    color: rgb(124, 1, 1);
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.hobby div {
+    font-size: 1.2em;
+}
+
+.education {
+    color: #fff;
+}
+
+.education h1 {
+    color: rgb(124, 1, 1);
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.my-school-name {
+    font-size: 2em;
+}
+
+.my-school-grad {
+    font-size: 1.3em;
+}
+
+.my-school-grad::before {
+    content: "-";
+    margin-right: 0.8em;
+}
+
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+	animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+
+.container-skills {
+    text-align: center;
+}
+
+.skills-head {
+    font-size: 4em;
+    color:rgb(124, 1, 1) ;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-div {
+    font-size: 2.5em;
+    margin: 2em 1em;
+}
+
+.fa-html5 {
+    color: orangered;
+}
+
+.fa-css3-alt {
+    color: blue;
+}
+
+.fa-js {
+    color: yellow;
+}
+
+
+.skills-div span {
+    color: #fff;
+}
+
+@media (max-width:1140px) {
+    .container-about-me {
+        display: block;
+        text-align: center;
+    }
+    .about-me-info {
+        margin: 2em auto;
+    }
+}
+
+@media (max-width: 760px){
+    .navbar {
+        display: block;
+    }
+    .navbar li {
+        margin-top: 1.5em;
+    }
+}
+
+@media (max-width: 650px) {
+    .skills {
+        display: block;
+    }
+    .img {
+        width: 25em;
+        height: 25em;
+    }
+    .about-me-info {
+        width: 80%;
+    }
+}

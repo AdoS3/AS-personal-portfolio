@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#453c3c, #2e126f) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-content {
+    position: relative;
+}
+
+.input {
+    font-size: 2em;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+
+}
+
+.icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #453c3c;
+}
